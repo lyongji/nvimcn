@@ -5,7 +5,7 @@
 
 local opt = vim.opt
 
-opt.wrap = true
+opt.wrap = true -- 开启自动换行
 opt.spelllang = { "en", "cjk" } -- 拼写检查 中文 英文
 opt.linebreak = false -- 更适合中文换行
 

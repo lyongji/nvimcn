@@ -33,13 +33,6 @@ require("lualine").setup({
   },
 })
 
--- 在md文件中关闭单词拼写检查
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "markdown" },
-  callback = function()
-    vim.opt_local.spell = false
-  end,
-})
 -- 禁用xmake.lua 的格式化功能
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "lua",
